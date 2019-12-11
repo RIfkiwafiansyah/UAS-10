@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UJIAN PRAKTIK</title>
+    <b>NAMA : RIFKI WAFIANSYAH</b>
+    <br> KELAS : X RPL </br>
+</head>
+<body>
+	<table border="1" height="600px" width="600px"align="center">
+		<tr height="50px" style="background: rgb(173, 1, 253)">
+			<td colspan="4" align="center">Header</td>
+		</tr>
+		<tr height="150px">
+			<td colspan="4"> <div class="w3-content w3-display-container">
+					<center><img class="mySlides" src="IMG-20180508-WA0019.jpg" style="width: 600px;"></center>
+					<center><img class="mySlides" src="IMG-20180819-WA0138.jpg" style="width: 600px;"></center>
+					<center><img class="mySlides" src="IMG-20180820-WA0074.jpg" style="width: 600px;"></center>
+				  
+				  <center><button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>  
+				<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button></center>
+				  </div>
+				  
+				  <script>
+				  var slideIndex = 1;
+				  showDivs(slideIndex);
+				  
+				  function plusDivs(n) {
+					showDivs(slideIndex += n);
+				  }
+				  
+				  function showDivs(n) {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					if (n > x.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = x.length}
+					for (i = 0; i < x.length; i++) {
+					  x[i].style.display = "none";  
+					}
+					x[slideIndex-1].style.display = "block";  
+				  }
+				  </script>
+		</tr>
+
+		<tr>
+		<td rowspan="1" colspan="1" height="50px" valign="top" width="50px" align="center">1</td>
+		<td valign="top" width="50px" align="center">2</td>
+		<td valign="top" width="50px" align="center">3</td>
+		<td valign="top" width="100px" align="center"></td>
+	    </tr>
+	    <tr>
+	    	<td rowspan="1" colspan="2" height="50px" valign="top" width="100" align="center">4</td>
+	    	<td valign="top" width="50px" align="center" height="50px">5</td>
+	    	<td valign="top" width="50px" align="center" height="50px">7</td>
+        </tr>
+	    <tr>
+	    	<td valign="top" width="50px" height="50px" colspan="3" align="center">6</td>
+	    	<td valign="top" width="50px" height="50px"></td>
+	    </tr>
+
+
+	</table>
+
+</body>
+</html>
